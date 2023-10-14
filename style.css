@@ -1,0 +1,867 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #34353b;
+}
+
+header {
+  height: 100vh;
+  padding: 36px 100px;
+  background-image: url(asset/sai_portfoli.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 90%;
+  z-index: 99;
+}
+
+header nav img {
+  height: 56px;
+  width: 56px;
+  object-fit: contain;
+  filter: invert(70%) sepia(96%) saturate(558%) hue-rotate(359deg) brightness(103%) contrast(106%);
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0px 20px;
+}
+
+header nav ul li a {
+  color: #98999a;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+header nav ul li a:hover {
+  color: #fbfbfb;
+}
+
+header nav ul li .active {
+  color: #fbfbfb;
+}
+
+header nav .search {
+  height: 48px;
+  width: 200px;
+  background-color: #3d3e42;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+header nav .search input {
+  border: none;
+  background-color: transparent;
+  width: 80%;
+  color: #fbfbfb;
+  outline: none;
+}
+
+header nav .search input:focus {
+  border: none;
+  outline: none;
+}
+
+header nav .search input::placeholder {
+  color: #98999a;
+  font-size: 16px;
+}
+
+header nav .search i {
+  color: #98999a;
+}
+
+.landing {
+  display: flex;
+  height: 90vh;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing .intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing .intro h3 {
+  color: #fbfbfb;
+  font-weight: 400;
+  font-size: 32px;
+  margin-left: 10vw;
+}
+
+.landing .intro h3 span {
+  color: #fec86a;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+.intro button {
+  height: 48px;
+  width: 144px;
+  margin-top: 2.5vh;
+  margin-left: 10vw;
+  background-color: transparent;
+  border: 2px solid #fec86a;
+  border-radius: 8px;
+  color: #fec86a;
+  font-size: 16px;
+  transition: all ease 0.5s;
+}
+
+.intro button:hover {
+  background-color: #fec86a;
+  color: #34353b;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 50vh;
+}
+
+.socials .line {
+  background-color: #fec86a;
+  height: 15vh;
+  width: 2.5px;
+}
+
+.socials i {
+  color: #fbfbfb;
+  font-size: 36px;
+}
+
+.about {
+  height: 50vh;
+  width: 100vw;
+  padding: 100px;
+}
+
+.about h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.about .description {
+  display: flex;
+  align-items: start;
+}
+
+.about .description .line {
+  height: 2.5px;
+  width: 400px;
+  background-color: #fec86a;
+  margin-right: 32px;
+}
+
+.about .description p {
+  color: #fbfbfb;
+  font-size: 20px;
+}
+
+.about .description p span {
+  color: #fec86a;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.skills h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.skill-card {
+  height: 20vw;
+  width: 20vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+  background-color: #fec86a;
+}
+
+.skill-card img {
+  height: 7.5vw;
+  width: 7.5vw;
+  object-fit: contain;
+}
+
+.skill-card h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.portfolio h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.portfolio-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.portfolio-card {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.portfolio-card img {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  object-fit: cover;
+}
+
+.portfolio-card .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  height: 30vw;
+  width: 30vw;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  transition: all ease 0.5s;
+  background-color: #34353ba2;
+}
+
+.portfolio-card .overlay h3 {
+  color: linear-gradient(to right, #ffa500 0%, #000000 100%);
+  color: #fbfbfb;
+  font-size: 24px;
+}
+
+/* .portfolio-card .overlay:hover h3 {
+  font-size: 28px;
+} */
+.portfolio-card .overlay p {
+  color: #fbfbfb;
+  /* color:linear-gradient(to right, #ffa500 0%, #000000 100%); */
+  font-size: 16px;
+  text-align: center;
+}
+
+.portfolio-card .overlay button {
+  height: 36px;
+  width: 108px;
+  background-color: #fec86a;
+  border: 1px solid #fec86a;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 12px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.portfolio-card .overlay:hover {
+  opacity: 10 !important;
+  background-color: #34353ba2;
+
+}
+
+/* .portfolio-card :hover {
+
+  filter: drop-shadow(0 0 0px rgb(255, 255, 255, 60%));
+  color: rgb(255, 255, 255, 80%);
+
+} */
+
+.portfolio button {
+  margin-top: 50px;
+  height: 48px;
+  width: 144px;
+  background-color: #fec86a;
+  border: 1px solid #fec86a;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.portfolio button:hover {
+  background-color: #f1e9dc;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  width: 100vw;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.darker-div {
+  background-color: #34353a;
+  width: 100vw;
+  height: 10vh;
+}
+
+.experience h1 {
+  position: absolute;
+  color: #fbfbfb;
+  font-size: 56px;
+  font-family: "Libre Baskerville", serif;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 15%;
+}
+
+.lighter-div {
+  background-color: #3d3e42;
+  width: 100vw;
+  /* height: 90vh; */
+  padding: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.lighter-div .exp {
+  height: 30vh;
+  width: 65vw;
+  position: relative;
+  margin-left: 20vh;
+}
+
+.exp h2 {
+  color: #fbfbfb;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.exp h2::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  color: #fec86a;
+  background-color: #fec86a;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 7.5%;
+  left: -5%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 5px #fec86a;
+}
+
+.exp-desc::before {
+  content: "";
+  height: 190px;
+  width: 2.5px;
+  background-color: #fbfbfb;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: -5%;
+}
+
+.exp-desc h3 {
+  color: #fbfbfb;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.exp-desc p {
+  color: #fbfbfb;
+  font-size: 16;
+  font-weight: 400;
+}
+
+.contact-me {
+  width: 100vw;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-me h1 {
+  font-size: 56px;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.contact-card {
+  background-color: #fec86a;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  margin-top: 7.5vh;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.np {
+  padding: 0px;
+}
+
+/* .featuredPropBox {} */
+
+.featuredPropBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: outside none none;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.featuredPropBox ul li {
+  background-color: #eeeeee;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 32vw;
+  margin: 5px;
+  width: 32%;
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.featuredPropBox ul li:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(10, 10, 10, 0.6);
+  transition: all 0.3s;
+}
+
+.featuredPropBox ul li:nth-child(1) {
+  background-image: url('asset/images/ims.jpg');
+}
+
+.featuredPropBox ul li:nth-child(2) {
+  background-image: url('asset/images/zoomium-removebg-preview\ -\ Copy.png');
+}
+
+.featuredPropBox ul li:nth-child(3) {
+  background-image: url('asset/images/sample2');
+}
+
+.featuredPropBox ul li:nth-child(4) {
+  background-image: url('asset/images/sample1');
+}
+
+.featuredPropBox ul li:nth-child(5) {
+  background-image: url('asset/images/ecommers');
+}
+
+
+
+.featuredPropBox ul li .fplogo {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 1;
+  transition: all 0.3s;
+  /* text-align: center; */
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.fplogo p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.col-lg-12-11 h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+}
+
+
+.featuredPropBox ul li .fptext {
+  display: none;
+  font-size: 16px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease 0s;
+  width: 65%;
+  z-index: 1;
+}
+
+.featuredPropBox ul li .fptext p {
+  color: #fff;
+  margin: 0px;
+}
+
+.featuredPropBox ul li:hover {
+  box-shadow: 0 0 0 25px rgba(0, 0, 0, 0.2) inset;
+}
+
+.featuredPropBox ul li:hover:after {
+  background-color: rgba(22, 22, 22, 0.3);
+}
+
+.featuredPropBox ul li:hover .fplogo {
+  display: none;
+}
+
+.featuredPropBox ul li:hover .fptext {
+  display: block;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1200px) {
+  header {
+    padding: 20px 30px;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .skills {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 1000px) {
+  .landing .intro h3 {
+    font-weight: 800;
+    font-size: 22px;
+    margin-left: 5vw;
+  }
+
+  .landing .intro h3 span {
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .intro button {
+    height: 40px;
+    width: 120px;
+    margin-top: 1vh;
+    margin-left: 5vw;
+  }
+
+  .about h1 {
+    font-size: 48px;
+  }
+
+  .about .description p {
+    font-size: 18px;
+  }
+
+  .featuredPropBox ul li .fplogo {
+    font-size: 20px;
+  }
+
+  .fplogo p {
+    font-size: 12px;
+  }
+
+  .lighter-div {
+    padding: 50px;
+  }
+
+  .experience h1 {
+    font-size: 40px;
+  }
+
+  .contact-card {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .fptext p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 800px) {
+  .hide-800 {
+    display: none;
+  }
+
+  .landing .intro h3 {
+    font-weight: 800;
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .about {
+    padding: 50px;
+  }
+
+  .landing .intro h3 span {
+    font-weight: 600;
+    font-size: 26px;
+  }
+
+  .intro button {
+    height: 35px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .about h1 {
+    font-size: 40px;
+  }
+
+  .about .description p {
+    font-size: 14px;
+  }
+
+  .skill-card h2 {
+    font-size: 20px;
+  }
+
+  .skills {
+    padding: 10px 20px;
+  }
+
+  .col-lg-12-11 h1 {
+    font-size: 46px;
+  }
+
+  .lighter-div {
+    padding: 10px;
+  }
+
+  .exp h2 {
+    font-size: 26px;
+  }
+
+  .exp-desc h3 {
+    font-size: 16px;
+  }
+
+  .exp-desc p {
+    font-size: 12px !important;
+  }
+
+  .experience h1 {
+    font-size: 30px;
+  }
+
+  .contact-me h1 {
+    font-size: 40px;
+  }
+
+  .contact-card {
+    font-size: 10px;
+  }
+
+  .contact-me {
+    padding: 50px;
+  }
+
+  header {
+    height: 50vh !important;
+    padding: 10px 20px;
+    width: 100vw;
+  }
+
+  .landing {
+    height: 50vh !important;
+  }
+
+  .socials {
+    margin-top: 10vh;
+  }
+  .fptext p{
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 600px) {
+  .hide-600 {
+    display: none;
+  }
+
+  .exp-desc h3 {
+    font-size: 14px;
+    margin: 0 !important;
+  }
+
+  .exp h2 {
+    font-size: 20px;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .about h1 {
+    font-size: 30px;
+  }
+
+  .about .description p {
+    font-size: 12px;
+  }
+
+  .skill-card h2 {
+    font-size: 10px;
+  }
+
+  .skills h1 {
+    font-size: 46px;
+  }
+
+  .featuredPropBox ul li .fplogo {
+    font-size: 14px;
+  }
+
+  .fplogo p {
+    font-size: 8px;
+  }
+
+  .experience h1 {
+    font-size: 18px;
+  }
+
+  .lighter-div .exp {
+    margin-left: 10vw;
+  }
+
+  .contact-me {
+    padding: 20px;
+  }
+
+  .contact {
+    gap: 10px;
+  }
+
+  .contact-card {
+    margin-top: 10px;
+  }
+
+  header {
+    height: 50vh !important;
+    padding: 10px 20px;
+    width: 100vw;
+  }
+
+  .landing {
+    height: 50vh !important;
+  }
+
+  .socials {
+    margin-top: 10vh;
+  }
+  .fptext p{
+    font-size: 8px;
+  }
+}
