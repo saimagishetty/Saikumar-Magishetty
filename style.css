@@ -29,7 +29,7 @@ header {
   background-repeat: no-repeat;
   width: 100vw;
 }
-
+/*  */
 header nav {
   display: flex;
   justify-content: space-between;
@@ -320,11 +320,14 @@ header nav .search i {
 }
 
 /* .portfolio-card .overlay:hover h3 {
+
   font-size: 28px;
+
 } */
 .portfolio-card .overlay p {
   color: #fbfbfb;
   /* color:linear-gradient(to right, #ffa500 0%, #000000 100%); */
+  
   font-size: 16px;
   text-align: center;
 }
@@ -569,7 +572,6 @@ a:hover {
   width: 60%;
   z-index: 1;
   transition: all 0.3s;
-  /* text-align: center; */
   color: #fff;
   font-size: 24px;
   font-weight: 800;
@@ -623,7 +625,8 @@ a:hover {
 .featuredPropBox ul li:hover .fptext {
   display: block;
 }
-.col-lg-12-11 h1{
+
+.col-lg-12-11 h1 {
   margin: 100px 0;
 }
 
