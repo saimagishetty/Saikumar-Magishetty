@@ -566,7 +566,7 @@ a:hover {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 60%;
   z-index: 1;
   transition: all 0.3s;
   /* text-align: center; */
@@ -623,6 +623,9 @@ a:hover {
 .featuredPropBox ul li:hover .fptext {
   display: block;
 }
+.col-lg-12-11 h1{
+  margin: 100px 0;
+}
 
 @media screen and (min-width: 100px) and (max-width: 1200px) {
   header {
@@ -635,13 +638,20 @@ a:hover {
   .skills {
     padding: 20px 50px;
   }
+
+  .landing .intro h3 {
+    margin-left: 0;
+  }
+
+  .intro button {
+    margin-left: 0;
+  }
 }
 
 @media screen and (min-width: 100px) and (max-width: 1000px) {
   .landing .intro h3 {
     font-weight: 800;
     font-size: 22px;
-    margin-left: 5vw;
   }
 
   .landing .intro h3 span {
@@ -653,7 +663,6 @@ a:hover {
     height: 40px;
     width: 120px;
     margin-top: 1vh;
-    margin-left: 5vw;
   }
 
   .about h1 {
@@ -684,7 +693,8 @@ a:hover {
     font-size: 14px;
     padding: 10px;
   }
-  .fptext p{
+
+  .fptext p {
     font-size: 14px;
   }
 }
@@ -712,7 +722,6 @@ a:hover {
   .intro button {
     height: 35px;
     width: 100px;
-    margin-top: 10px;
     margin-left: 0;
   }
 
@@ -781,7 +790,8 @@ a:hover {
   .socials {
     margin-top: 10vh;
   }
-  .fptext p{
+
+  .fptext p {
     font-size: 10px;
   }
 }
@@ -789,6 +799,25 @@ a:hover {
 @media screen and (min-width: 100px) and (max-width: 600px) {
   .hide-600 {
     display: none;
+  }
+
+  .landing .intro h3 {
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .landing .intro h3 span {
+    font-weight: 600;
+    font-size: 22px;
+  }
+
+  .intro button {
+    height: 25px;
+    width: 80px;
+    font-size: 12px;
+    margin-left: 0;
   }
 
   .exp-desc h3 {
@@ -861,7 +890,8 @@ a:hover {
   .socials {
     margin-top: 10vh;
   }
-  .fptext p{
+
+  .fptext p {
     font-size: 8px;
   }
 }
