@@ -140,6 +140,22 @@ header nav .search i {
   font-size: 16px;
   transition: all ease 0.5s;
 }
+.viewMore button {
+  height: 48px;
+  width: 144px;
+  margin-top: 30px;
+  /* margin-left: 10vw; */
+  background-color: transparent;
+  border: 2px solid #fec86a;
+  border-radius: 8px;
+  color: #fec86a;
+  font-size: 16px;
+  transition: all ease 0.5s;
+}
+.viewMore button:hover {
+  background-color: #fec86a;
+  color: #34353b;
+}
 
 .intro button:hover {
   background-color: #fec86a;
@@ -667,6 +683,11 @@ a:hover {
     width: 120px;
     margin-top: 1vh;
   }
+  .viewMore button {
+    height: 40px;
+    width: 120px;
+    margin-top: 1vh;
+  }
 
   .about h1 {
     font-size: 48px;
@@ -723,6 +744,11 @@ a:hover {
   }
 
   .intro button {
+    height: 35px;
+    width: 100px;
+    margin-left: 0;
+  }
+  .viewMore button {
     height: 35px;
     width: 100px;
     margin-left: 0;
@@ -817,6 +843,12 @@ a:hover {
   }
 
   .intro button {
+    height: 25px;
+    width: 80px;
+    font-size: 12px;
+    margin-left: 0;
+  }
+  .viewMore button {
     height: 25px;
     width: 80px;
     font-size: 12px;
