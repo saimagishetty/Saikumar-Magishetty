@@ -28,3 +28,12 @@
 //         btn2.style.display = 'none';
 //     }
 // }
+
+
+function downloadPDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    doc.text("Hello, this is your PDF content!", 20, 20);
+    doc.save("Saikumar's Resume.pdf");  // Downloads the PDF file
+}

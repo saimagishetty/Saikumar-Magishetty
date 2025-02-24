@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saikumar Magishetty - Senior Software Engineer</title>
-    <meta name="description" content="A passionate Software Engineer with 3+ years of experience, specializing in Angular development. Holds a degree in Computer Science Engineering. Adept at designing and building responsive web applications, delivering high-quality code, and solving complex technical challenges. Skilled in front-end development, with a strong focus on performance and user experience.">
-    <meta name="keywords" content="Saikumar, Magishetty,saimagishetty, Saikumar M, M Saikumar, Frontend Developer, Angular Developer">
+    <meta name="description"
+        content="A passionate Software Engineer with 3+ years of experience, specializing in Angular development. Holds a degree in Computer Science Engineering. Adept at designing and building responsive web applications, delivering high-quality code, and solving complex technical challenges. Skilled in front-end development, with a strong focus on performance and user experience.">
+    <meta name="keywords"
+        content="Saikumar, Magishetty,saimagishetty, Saikumar M, M Saikumar, Frontend Developer, Angular Developer">
     <meta name="author" content="Saikumar Magishetty">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.flaticon.com/uicons/flaticon-uicons-regular.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
 <body id="home">
@@ -18,12 +21,13 @@
         <nav>
             <img src="asset/carepy_logo-1.svg" alt="">
             <ul>
-                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#home" class="hide-600" class="active">Home</a></li>
                 <li class="hide-800"><a href="#about">About</a></li>
                 <li class="hide-600"><a href="#Skills">Skills</a></li>
                 <li class="hide-600"><a href="#portfolio-loc">Portfolio</a></li>
                 <li class="hide-800"><a href="#Experience">Experience</a></li>
                 <li class="hide-600"><a href="#contact-loc">Contact</a></li>
+                <li class="resume-button intro"><a href="Saikumar's Resume.pdf" download="Saikumar's Resume.pdf" target="_blank"><button>Resume</button></a></li>
             </ul>
         </nav>
         <div class="landing">
@@ -43,6 +47,12 @@
                 </a>
                 <a href="https://instagram.com/saikumar_magishetty?igshid=MzRlODBiNWFlZA==" target="_blank">
                     <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://www.youtube.com/@saimagishetty" target="_blank">
+                    <i class="ri-youtube-fill"></i>
+                </a>
+                <a href="https://www.hackerrank.com/profile/saimagishetty" target="_blank">
+                    <i class="ri-code-box-fill"></i> 
                 </a>
                 <!-- <i class="ri-facebook-line"></i> -->
             </div>
@@ -70,9 +80,9 @@
                 <img src="asset/angular.png" alt="">
                 <h2>Angular</h2>
             </div>
-            <div class="skill-card">
-                <img src="asset/react.svg" alt="">
-                <h2>React JS</h2>
+            <div id="viewAllSkills" class="skill-card">
+                <img src="asset/Rxjs_Logo-512-512.png" alt="">
+                <h2>RxJs</h2>
             </div>
             <div id="viewAllSkills" class="skill-card">
                 <img src="asset/js.svg" alt="">
@@ -81,6 +91,22 @@
             <div id="viewAllSkills" class="skill-card">
                 <img src="asset/typescript.jpg" alt="">
                 <h2>TypeScript</h2>
+            </div>
+            <div class="skill-card">
+                <img src="asset/NET_Core_Logo.svg.png" alt="">
+                <h2>.Net Core</h2>
+            </div>
+            <div id="viewAllSkills" class="skill-card">
+                <img src="asset/Logo_C_sharp.svg.png" alt="">
+                <h2>C#</h2>
+            </div>
+            <div id="viewAllSkills" class="skill-card">
+                <img src="asset/microsoft-sql-server-1.svg" alt="">
+                <h2>MS SQL Server</h2>
+            </div>
+            <div id="viewAllSkills" class="skill-card">
+                <img src="asset/azure-2.svg" alt="">
+                <h2>AZURE</h2>
             </div>
             <div id="viewAllSkills" class="skill-card">
                 <img src="asset/html.svg" alt="">
@@ -127,6 +153,10 @@
                 <div class="skill-card">
                     <img src="asset/redux.png" alt="">
                     <h2>Redux </h2>
+                </div>
+                <div class="skill-card">
+                    <img src="asset/react.svg" alt="">
+                    <h2>React JS</h2>
                 </div>
                 <div class="skill-card">
                     <img src="asset/wordpress.png" alt="">
@@ -280,7 +310,7 @@
         <div class="contact">
             <div class="contact-card">
                 <i class="ri-message-3-line"></i>
-                <p>saimagishetty1@gmail.com</p>
+                <p>saimagishetty01@gmail.com</p>
             </div>
             <div class="contact-card">
                 <i class="ri-phone-line"></i>
